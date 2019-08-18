@@ -8,6 +8,8 @@
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
   <div class="page-header">
 
+    <?= "foo" ?>
+
     <% include ../helpers/navbar %>
 
     <h1>Hello World</h1>
@@ -18,6 +20,12 @@
   <button onClick="showPicture()" class="btn btn-dark">Click me</button>
 
   <div id="image"></div>
+  
+  <input class="search" type="text" placeholder="Enter city name">
+  <button type="button" onClick="searchWeather()">Search</button>
+
+  <div class="city"></div>
+  <div class="temp"></div>
   
 </body>
 
