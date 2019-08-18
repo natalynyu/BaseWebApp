@@ -3,6 +3,8 @@
   $.ajax(url, {success: function(data){
     $(".city").text(data.name)
     $(".temp").text(data.main.temp)
+  }, error: function(err) {
+    $(".error-message").text("An error occurred: City not found")
   }})
 }
 
